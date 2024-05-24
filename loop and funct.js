@@ -2,12 +2,12 @@
 let nftCollection = [];
 
 // Step 2: Create a function to mint NFTs
-function mintNFT(name, description, image, owner) {
+function mintNFT(name, description, eyeColor, owner) {
     // Create an NFT object using the parameters passed for metadata
     const nft = {
         name: name,
         description: description,
-        image: image,
+        eyeColor: eyeColor,
         owner: owner
     };
 
@@ -22,7 +22,7 @@ function listNFTs() {
         console.log(`NFT ${index + 1}:`);
         console.log(`  Name: ${nft.name}`);
         console.log(`  Description: ${nft.description}`);
-        console.log(`  Image: ${nft.image}`);
+        console.log(`  Eye Color: ${nft.eyeColor}`);
         console.log(`  Owner: ${nft.owner}`);
         console.log('---------------------------');
     });
@@ -37,9 +37,9 @@ function getTotalSupply() {
 // Call your functions below this line
 
 // Mint some NFTs
-mintNFT("Cool NFT #1", "This is the first cool NFT", "image1.png", "Alice");
-mintNFT("Cool NFT #2", "This is the second cool NFT", "image2.png", "Bob");
-mintNFT("Cool NFT #3", "This is the third cool NFT", "image3.png", "Charlie");
+mintNFT("Cool NFT #1", "This is the first cool NFT", "Blue", "Alice");
+mintNFT("Cool NFT #2", "This is the second cool NFT", "Green", "Bob");
+mintNFT("Cool NFT #3", "This is the third cool NFT", "Brown", "Charlie");
 
 // List all NFTs
 listNFTs();
